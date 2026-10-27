@@ -2,8 +2,8 @@ package in.harmeetsingh.springaiplayground;
 
 import com.github.tomakehurst.wiremock.client.ResponseDefinitionBuilder;
 import com.github.tomakehurst.wiremock.client.WireMock;
-import in.harmeetsingh.springaiplayground.models.Question;
-import in.harmeetsingh.springaiplayground.service.SpringAIBoardGameService;
+import in.harmeetsingh.springaiplayground._01_basics.models.Question;
+import in.harmeetsingh.springaiplayground._01_basics.service.SpringAIBoardGameService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

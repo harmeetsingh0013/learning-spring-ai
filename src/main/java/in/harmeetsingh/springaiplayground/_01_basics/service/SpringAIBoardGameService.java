@@ -1,11 +1,10 @@
-package in.harmeetsingh.springaiplayground.service;
+package in.harmeetsingh.springaiplayground._01_basics.service;
 
-import in.harmeetsingh.springaiplayground.models.Answer;
-import in.harmeetsingh.springaiplayground.models.Question;
+import in.harmeetsingh.springaiplayground._01_basics.models.Answer;
+import in.harmeetsingh.springaiplayground._01_basics.models.Question;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class SpringAIBoardGameService implements BoardGameService{
     private final ChatClient chatClient;
 
