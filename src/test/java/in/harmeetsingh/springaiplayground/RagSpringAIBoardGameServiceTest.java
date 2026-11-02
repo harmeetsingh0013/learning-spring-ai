@@ -1,7 +1,7 @@
 package in.harmeetsingh.springaiplayground;
 
-import in.harmeetsingh.springaiplayground._01_basics.models.Question;
-import in.harmeetsingh.springaiplayground._01_basics.service.BoardGameService;
+import in.harmeetsingh.springaiplayground._02_Prompt.models.Question;
+import in.harmeetsingh.springaiplayground._03_rag.service.BoardGameService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class SpringAIBoardGameServiceTest {
+public class RagSpringAIBoardGameServiceTest {
 
     @Autowired
     private BoardGameService boardGameService;
@@ -38,7 +38,7 @@ public class SpringAIBoardGameServiceTest {
     @Test
     public void evaluateRelevancy() {
         var userText = "why is the sky blue?";
-        var question = new Question(userText);
+        var question = new Question("Catan", userText);
         var answer = boardGameService.askQuestion(question);
 
         var evaluationRequest = new EvaluationRequest(userText, answer.answer());
